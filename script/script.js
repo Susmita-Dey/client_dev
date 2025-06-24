@@ -40,13 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
   var dropdownMenu = dropdownBtn && dropdownBtn.nextElementSibling;
 
   if (dropdownBtn && dropdownMenu) {
-    dropdownBtn.addEventListener("click", function (e) {
+    dropdownBtn.addEventListener("mouseover", function (e) {
       e.preventDefault();
       dropdownMenu.classList.toggle("show");
     });
 
     // Hide dropdown when clicking outside
-    document.addEventListener("click", function (e) {
+    document.addEventListener("mouseout", function (e) {
       if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
         dropdownMenu.classList.remove("show");
       }
@@ -145,13 +145,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const carousel = document.getElementById("client-carousel");
-  
+
   function setupSmoothCarousel(carouselElement, logoFiles, visibleCount = 4) {
     if (!carouselElement) return;
-    
+
     // Clear existing content
     carouselElement.innerHTML = "";
-    
+
     // Create a container for smooth scrolling
     const scrollContainer = document.createElement("div");
     scrollContainer.style.cssText = `
@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
       animation: scroll 40s linear infinite;
       width: max-content;
     `;
-    
+
     // Add logos twice for seamless loop
     for (let i = 0; i < 2; i++) {
       logoFiles.forEach((logoPath) => {
@@ -176,9 +176,9 @@ document.addEventListener("DOMContentLoaded", function () {
         scrollContainer.appendChild(img);
       });
     }
-    
+
     carouselElement.appendChild(scrollContainer);
-    
+
     // Add CSS animation
     if (!document.querySelector('#carousel-animations')) {
       const style = document.createElement('style');
@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", function () {
       `;
       document.head.appendChild(style);
     }
-    
+
     scrollContainer.classList.add('scroll-container');
   }
 
@@ -247,7 +247,7 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   const thirdPartyCarousel = document.getElementById("third-party-carousel");
-  
+
   // Setup 3rd party carousel
   setupSmoothCarousel(thirdPartyCarousel, thirdPartyLogoFiles, 6);
 
@@ -327,13 +327,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // For the last slide, move to the last card (which is the clone of the first)
     if (idx === 2) {
-      cardsContainer.style.transform = `translateX(-${
-        (cardWidth + gap) * 2
-      }px)`;
+      cardsContainer.style.transform = `translateX(-${(cardWidth + gap) * 2
+        }px)`;
     } else {
-      cardsContainer.style.transform = `translateX(-${
-        idx * (cardWidth + gap)
-      }px)`;
+      cardsContainer.style.transform = `translateX(-${idx * (cardWidth + gap)
+        }px)`;
     }
     dots.forEach((dot, i) => {
       dot.classList.toggle("active", i === idx);
