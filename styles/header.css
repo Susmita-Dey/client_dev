@@ -208,6 +208,10 @@
   object-fit: contain;
 }
 
+button {
+  cursor: pointer;
+}
+
 .discover-btn {
   display: block;
   background: #b71c1c;

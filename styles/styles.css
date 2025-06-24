@@ -13,7 +13,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   background: #fff;
-  padding: 80px 0 60px 0;
+  padding: 140px 0 60px 0;
   font-family: "Inter", sans-serif;
   min-height: 600px;
   position: relative;
@@ -27,6 +27,7 @@ body {
 }
 
 .who-subtitle {
+  font-family: "Raleway", sans-serif;
   color: #b71c1c;
   font-size: 16px;
   font-weight: 700;
@@ -36,18 +37,20 @@ body {
 }
 
 .who-title {
-  font-size: 2.8rem;
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
   color: #232733;
   margin: 0 0 28px 0;
   line-height: 1.13;
 }
 
 .who-desc {
-  font-size: 1.18rem;
+  font-size: 1.1rem;
   color: #6c7280;
   margin-bottom: 38px;
   line-height: 1.6;
+  letter-spacing: -0.5px;
 }
 
 .who-highlight {
@@ -213,7 +216,7 @@ body {
 
 .features-bar {
   width: 86vw;
-  max-width: 1200px;
+  max-width: 1250px;
   margin: -60px auto 0 auto; /* Negative top margin for overlap */
   background: #fff;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -249,11 +252,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid #b71c1c;
+  border-radius: 50%;
 }
 
-.feature-icon img {
-  width: 44px;
-  height: 44px;
+.feature-icon svg {
+  color: #b71c1c;
+  width: 66px;
+  height: 66px;
+  padding: 12px;
 }
 
 .feature-text {
@@ -262,7 +269,7 @@ body {
 }
 
 .feature-title {
-  font-size: 1.18rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #222;
   margin-bottom: 6px;
@@ -288,8 +295,16 @@ body {
   color: #fff;
 }
 
-.feature-highlight .feature-icon img {
+.feature-highlight .feature-icon {
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.feature-highlight .feature-icon svg {
   filter: brightness(0) invert(1);
+  width: 66px;
+  height: 66px;
+  padding: 12px;
 }
 
 /* --- Add or update these styles for the client-trust-section carousel --- */
@@ -314,14 +329,45 @@ body {
 }
 
 .client-trust-number span {
+  font-family: "Raleway", sans-serif;
   color: #b71c1c;
   font-size: 3.5rem;
-  font-weight: 800;
-  border-bottom: 4px solid #b71c1c;
+  font-weight: 700;
+  /* border-bottom: 4px solid #b71c1c; */
   display: inline-block;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
+  letter-spacing: -1px;
   position: relative;
+}
+
+.client-trust-number > span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.client-trust-number svg {
+  display: block; /* Remove inline SVG gap */
+  width: 180px;
+  height: 28px; /* Adjust as needed */
+  margin-top: -28px; /* Optional: tweak to overlap or tighten */
+}
+
+/* Animated SVG underline for client-trust-number */
+.client-trust-number svg path {
+  stroke: #b71c1c;
+  stroke-width: 18;
+  fill: none;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: underline-draw 1.2s cubic-bezier(0.77, 0, 0.18, 1) infinite
+    forwards;
+}
+
+@keyframes underline-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 .client-trust-title {
@@ -329,7 +375,7 @@ body {
   font-weight: 700;
   color: #232b39;
   margin-bottom: 28px;
-  margin-top: 10px;
+  margin-top: 20px;
   line-height: 1.2;
 }
 
@@ -344,7 +390,7 @@ body {
 .client-carousel {
   display: flex;
   overflow: hidden;
-  width: 700px;
+  width: 1000px;
   height: 100px;
   align-items: center;
   justify-content: center;
@@ -396,20 +442,21 @@ body {
   justify-content: center;
   gap: 80px;
   margin-top: 36px;
+  font-family: "Raleway", sans-serif;
 }
 
 .stat-number {
   color: #b71c1c;
-  font-size: 2.3rem;
-  font-weight: 800;
-  letter-spacing: 1px;
+  font-size: 3.3rem;
+  font-weight: 700;
+  letter-spacing: -1px;
 }
 
 .stat-label {
   color: #232b39;
-  font-size: 1.13rem;
+  font-size: 1.16rem;
   margin-top: 5px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 @media (max-width: 900px) {
@@ -473,11 +520,12 @@ body {
 }
 
 .third-party-subtitle {
+  font-family: "Raleway", sans-serif;
   color: #b71c1c;
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
@@ -510,8 +558,8 @@ body {
 .third-party-carousel {
   display: flex;
   overflow: hidden;
-  width: 900px;
-  height: 100px;
+  width: 1100px;
+  height: 80px;
   align-items: center;
   justify-content: center;
   gap: 60px;
@@ -520,7 +568,7 @@ body {
 }
 
 .third-party-carousel img {
-  max-height: 80px;
+  max-height: auto;
   max-width: 180px;
   object-fit: contain;
   filter: grayscale(0.2);
@@ -614,34 +662,43 @@ body {
   gap: 18px;
 
   cursor: pointer;
-  transition: transform 0.18s cubic-bezier(0.4, 2, 0.6, 1), box-shadow 0.18s,
-    border 0.18s;
+  transition: transform 0.18s;
   min-height: 110px;
 }
 
 .solution-tab:hover {
-  transform: scale(1.07);
-  box-shadow: 0 8px 32px rgba(21, 101, 192, 0.14);
-
+  transform: scale(1.1);
   z-index: 2;
 }
 
-.solution-tab-icon {
+.solution-tab > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.solution-tab-icon svg {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #1f2937;
+  border-radius: 50%;
+  padding: 12px;
   font-size: 2.2rem;
-  margin-top: 2px;
-  color: #1976d2;
+  color: #1f2937;
 }
 
 .solution-tab-title {
-  font-size: 1.13rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 4px;
-  text-decoration: underline;
+  text-decoration: none;
   color: #232b39;
 }
 
 .solution-tab-desc {
-  font-size: 1.01rem;
+  font-size: 0.9rem;
   font-weight: 400;
   color: #232b39;
 }
