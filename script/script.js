@@ -83,6 +83,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Animate tech-spec-card as they enter viewport (class stays after entering)
+  if (window.innerWidth > 1100) {
+    const cards = document.querySelectorAll('.tech-spec-card');
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            obs.unobserve(entry.target); // Class stays after entering
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+    cards.forEach(card => observer.observe(card));
+  } else {
+    // On mobile, show all cards immediately
+    document.querySelectorAll('.tech-spec-card').forEach(card => card.classList.add('visible'));
+  }
+
   // --- Client Logo Carousel Logic ---
   const clientLogoFolders = [
     "assets/HTML Photos/home-images/Client logo/Education",
