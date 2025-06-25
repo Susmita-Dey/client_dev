@@ -103,7 +103,7 @@
 .telcos-hero {
   position: relative;
   width: 100%;
-  max-height: 600px;
+  max-height: 72vh;
   /* 480px * 0.8 */
   display: flex;
   align-items: center;
@@ -112,7 +112,7 @@
   overflow: hidden;
 }
 
-.telcos-hero-img {
+.telcos-hero-video {
   width: 100%;
   min-height: 250px;
   /* 480px * 0.8 */
@@ -324,6 +324,7 @@
 
 /* Telcos Benefits Section */
 .telcos-benefits-section {
+  font-family: "Raleway", sans-serif;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -504,6 +505,11 @@
   /* 50.05px * 1.15 */
   max-height: 131.56px;
   /* 114.4px * 1.15 */
+}
+
+.benefits-form > input::placeholder,
+textarea::placeholder {
+  font-family: "Raleway", sans-serif;
 }
 
 .benefits-form button {

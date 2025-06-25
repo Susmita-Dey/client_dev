@@ -83,10 +83,10 @@
   padding: 6px 8px;
   transition: color 0.2s;
 }
-
+/* 
 .nav-section nav ul li a:hover {
   color: #1a237e;
-}
+} */
 
 .dropdown-menu {
   display: none;
