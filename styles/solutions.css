@@ -122,6 +122,7 @@
 }
 
 .telcos-hero-overlay {
+  font-family: "Raleway", sans-serif;
   position: absolute;
   top: 0;
   left: 0;
@@ -140,11 +141,12 @@
 .telcos-hero-overlay h1 {
   font-size: 2.4rem;
   /* 3rem * 0.8 */
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 19px;
   /* 24px * 0.8 */
   line-height: 1.1;
   letter-spacing: 1px;
+  max-width: 900px;
 }
 
 .telcos-hero-overlay p {
@@ -164,7 +166,7 @@
   gap: 48px;
   max-width: 1700px;
   margin: 80px auto 40px auto;
-  padding: 0 60px 40px 60px;
+  padding: 0 120px 40px 120px;
   align-items: flex-start;
   border-radius: 24px;
   box-sizing: border-box;
@@ -323,18 +325,20 @@
 /* Telcos Benefits Section */
 .telcos-benefits-section {
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
   position: relative;
   margin-bottom: 60px;
   margin-left: 40px;
   margin-top: 80px;
+  padding: 0 120px;
   /* Adjust the value as needed */
 }
 
 .benefits-left {
   flex: 1 1 0;
-  max-height: 100vh;
-  overflow-y: auto;
+  /* max-height: 100vh; */
+  /* overflow-y: auto; */
   /* Optional: add padding or width as needed */
 }
 
@@ -981,7 +985,7 @@
 
 /* Clientele Section Styles */
 .clientele-section {
-  width: 100vw;
+  width: 100%;
   background: #fff;
   padding: 64px 0 32px 0;
   display: flex;
@@ -1022,6 +1026,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 100px;
 }
 
 .clientele-img {
@@ -1041,7 +1046,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
 }
 
 .hotel-managed-container {
@@ -1249,6 +1254,14 @@
 .testimonial-right img {
   width: 85%;
   height: auto;
+}
+
+.testimonial-section,
+.faq-section,
+.clientele-section,
+.hotel-managed-section {
+  width: 100%;
+  /* ...other styles... */
 }
 
 /* Mobile Responsive Styles */
