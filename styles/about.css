@@ -14,7 +14,7 @@ body {
 .about-hero {
   position: relative;
   width: 100%;
-  min-height: 570px;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,6 +41,10 @@ body {
 }
 
 .about-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
   z-index: 1;
   text-align: center;
@@ -51,14 +55,13 @@ body {
 
 .about-hero-content h1 {
   font-size: 3.2rem;
-  /* 4rem - 20% = 3.2rem */
   font-weight: 700;
   margin-bottom: 18px;
 }
 
 .about-hero-content p {
-  font-size: 1.6rem;
-  /* 2rem - 20% = 1.6rem */
+  font-size: 1.4rem;
+  max-width: 800px;
   font-weight: 400;
 }
 

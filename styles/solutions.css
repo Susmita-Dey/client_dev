@@ -1,6 +1,8 @@
 /* Example: Telcos Solution Section Styling */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .solution-section {

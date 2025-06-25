@@ -35,18 +35,36 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // --- Desktop Dropdown Logic ---
+  // Desktop Dropdown Logic
   var dropdownBtn = document.getElementById("solutions-btn");
   var dropdownMenu = dropdownBtn && dropdownBtn.nextElementSibling;
 
   if (dropdownBtn && dropdownMenu) {
-    dropdownBtn.addEventListener("mouseover", function (e) {
+    // Hover: show on mouseenter, hide on mouseleave
+    dropdownBtn.addEventListener("mouseenter", function () {
+      dropdownMenu.classList.add("show");
+    });
+    dropdownBtn.addEventListener("mouseleave", function () {
+      // Use timeout to allow moving to menu
+      setTimeout(function () {
+        if (!dropdownMenu.matches(':hover')) dropdownMenu.classList.remove("show");
+      }, 100);
+    });
+    dropdownMenu.addEventListener("mouseenter", function () {
+      dropdownMenu.classList.add("show");
+    });
+    dropdownMenu.addEventListener("mouseleave", function () {
+      dropdownMenu.classList.remove("show");
+    });
+
+    // Click: toggle
+    dropdownBtn.addEventListener("click", function (e) {
       e.preventDefault();
       dropdownMenu.classList.toggle("show");
     });
 
-    // Hide dropdown when clicking outside
-    document.addEventListener("mouseout", function (e) {
+    // Click outside: hide
+    document.addEventListener("mousedown", function (e) {
       if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
         dropdownMenu.classList.remove("show");
       }

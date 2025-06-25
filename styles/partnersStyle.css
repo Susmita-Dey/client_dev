@@ -1,17 +1,17 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .hero-partner {
   position: relative;
   width: 100%;
-  height: 380px;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
-.hero-bg-img {
+.hero-partner-bg {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -23,7 +23,7 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.35);
+  background: rgba(0, 0, 0, 0.35);
   z-index: 1;
 }
 .hero-content {
@@ -38,18 +38,25 @@
   justify-content: center;
 }
 .hero-content h1 {
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 .hero-content p {
   font-size: 1.35rem;
   font-weight: 400;
+  max-width: 700px;
 }
 @media (max-width: 700px) {
-  .hero-partner { height: 220px; }
-  .hero-content h1 { font-size: 1.5rem; }
-  .hero-content p { font-size: 1rem; }
+  .hero-partner {
+    height: 220px;
+  }
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
 }
 /* Add to partnersStyle.css or your main styles.css */
 .partner-section {
@@ -57,7 +64,7 @@
   display: flex;
   justify-content: center;
   padding: 80px 5%;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: white;
   position: relative;
   overflow: hidden;
@@ -144,7 +151,7 @@
 .benefit-enquiry-section {
   width: 100%;
   padding: 80px 5%;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: white;
 }
 
@@ -164,21 +171,19 @@
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background: #fff;
-    min-width: 140px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    z-index: 1;
-    top: 100%;
-    left: 0;
+  display: none;
+  position: absolute;
+  background: #fff;
+  min-width: 140px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  top: 100%;
+  left: 0;
 }
 
 .dropdown-content.show {
-    display: block;
+  display: block;
 }
-
-
 
 /* ---------- Benefits Section ---------- */
 .benefits-title {
@@ -275,5 +280,3 @@
   cursor: pointer;
   width: fit-content;
 }
-
-
