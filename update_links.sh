@@ -1,12 +1,12 @@
 #!/bin/bash
 
 find . -type f -name "*.html" -exec sed -i \
-  -e 's/about.html/about-us-globetek.html/g' \
-  -e 's/partner.html/partner-portal-globetek.html/g' \
-  -e 's/clientele.html/our-clientele-globetek.html/g' \
-  -e 's/case-study.html/case-study-globetek.html/g' \
-  -e 's/events.html/events-globetek.html/g' \
-  -e 's/contact.html/contact-us-globetek.html/g' \
+  -e 's/about.html/about-us-globetek/index.html/g' \
+  -e 's/partner.html/partner-portal-globetek/index.html/g' \
+  -e 's/clientele.html/our-clientele-globetek/index.html/g' \
+  -e 's/case-study.html/case-study-globetek/index.html/g' \
+  -e 's/events.html/events-globetek/index.html/g' \
+  -e 's/contact.html/contact-us-globetek/index.html/g' \
   -e 's/home.html/home-globetek.html/g' \
   -e 's/blogs.html/blogs-globetek.html/g' \
   -e 's/t&c.html/terms-and-conditions-globetek.html/g' \
