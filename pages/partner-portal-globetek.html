@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -292,28 +292,31 @@
           </p>
           <ul class="partner-benefits">
             <li>
-              <span class="check">&#10004;</span
-              ><strong>Competitive Margins:</strong> Maximize your profitability
-              with industry-leading margins.
+              <span class="check">&#10004;</span>
+              <span>
+                <strong>Competitive Margins:</strong> Maximize your
+                profitability with industry-leading margins.</span
+              >
             </li>
             <li>
-              <span class="check">&#10004;</span
-              ><strong>Significant ROI Growth:</strong> Achieve high returns on
-              investment with our top-demand products.
+              <span class="check">&#10004;</span>
+              <span>
+                <strong>Significant ROI Growth:</strong> Achieve high returns on
+                investment with our top-demand products.</span
+              >
             </li>
             <li>
-              <span class="check">&#10004;</span
-              ><strong>Dedicated Support:</strong> Benefit from comprehensive
-              assistance from our business and inside sales teams.
+              <span class="check">&#10004;</span>
+              <span
+                ><strong>Dedicated Support:</strong> Benefit from comprehensive
+                assistance from our business and inside sales teams.</span
+              >
             </li>
           </ul>
         </div>
         <!-- Image Section -->
         <div class="partner-image">
-          <img
-            src="../assets/HTML Photos/Partner portal/0.jpg"
-            alt="Globetek Partners"
-          />
+          <img src="../assets/Untitled-design-23.png" alt="Globetek Partners" />
         </div>
       </div>
     </section>
@@ -350,18 +353,56 @@
             For inquiries about product prices and purchasing options, please
             fill out the form below. We will get in touch with you soon.
           </p>
-          <form class="enquiry-form">
-            <div class="form-row">
-              <input type="text" placeholder="Name" class="form-input" />
-              <input type="text" placeholder="Company" class="form-input" />
+          <form class="sales-enquiry-form">
+            <div class="sales-enquiry-row">
+              <div class="sales-enquiry-field">
+                <label for="enquiry-name">Name</label>
+                <input
+                  type="text"
+                  id="enquiry-name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="sales-enquiry-field">
+                <label for="enquiry-company">Company</label>
+                <input type="text" id="enquiry-company" placeholder="Company" />
+              </div>
             </div>
-            <input type="email" placeholder="Email" class="form-input full" />
-            <input type="text" placeholder="Subject" class="form-input full" />
-            <textarea
-              placeholder="Message"
-              class="form-input full message-box"
-            ></textarea>
-            <button type="submit" class="submit-btn">SEND MESSAGE</button>
+            <div class="sales-enquiry-field">
+              <label for="enquiry-email">Email</label>
+              <input
+                type="email"
+                id="enquiry-email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="sales-enquiry-field">
+              <label for="enquiry-mobile">Mobile No.</label>
+              <input
+                type="tel"
+                id="enquiry-mobile"
+                placeholder="Mobile No."
+                required
+              />
+            </div>
+            <div class="sales-enquiry-field">
+              <label for="enquiry-subject">Subject</label>
+              <input type="text" id="enquiry-subject" placeholder="Subject" />
+            </div>
+            <div class="sales-enquiry-field">
+              <label for="enquiry-message">Message</label>
+              <textarea
+                id="enquiry-message"
+                placeholder="Message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="sales-enquiry-btn">
+              SEND MESSAGE
+            </button>
           </form>
         </div>
       </div>

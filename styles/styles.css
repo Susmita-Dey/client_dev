@@ -1831,7 +1831,7 @@ body {
 .sales-enquiry-section {
   display: flex;
   max-width: 1400px;
-  margin: 48px auto 0 auto;
+  margin: 120px auto 0 auto;
   background: #fff;
   border-radius: 12px;
   /* Remove box-shadow from the whole section */
@@ -1864,13 +1864,13 @@ body {
 }
 
 .sales-enquiry-form {
+  font-family: "Be VietNam Pro", sans-serif;
   width: 100%;
 }
 
 .sales-enquiry-row {
   display: flex;
   gap: 24px;
-  margin-bottom: 18px;
 }
 
 .sales-enquiry-field {
@@ -1882,9 +1882,9 @@ body {
 
 .sales-enquiry-field label {
   font-weight: 700;
-  color: #232b39;
+  color: #4b5563;
   margin-bottom: 8px;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .sales-enquiry-field input,
@@ -1892,8 +1892,8 @@ body {
   background: #f6f5f7;
   border: none;
   border-radius: 2px;
-  padding: 16px 12px;
-  font-size: 1.1rem;
+  padding: 14px 12px;
+  font-size: 0.95rem;
   color: #232b39;
   margin-bottom: 0;
   font-family: inherit;
@@ -1910,9 +1910,9 @@ body {
   background: #b71c1c;
   color: #fff;
   border: none;
-  padding: 16px 48px;
-  font-size: 1.1rem;
-  font-weight: 600;
+  padding: 16px 28px;
+  font-size: 0.9rem;
+  font-weight: 500;
   border-radius: 2px;
   margin-top: 8px;
   cursor: pointer;
@@ -1925,9 +1925,10 @@ body {
 }
 
 .sales-enquiry-map-wrap {
+  margin-top: 40px;
   flex: 1 1 50%;
   min-width: 350px;
-  min-height: 600px;
+  min-height: 800px;
   height: 100%;
   background: #f6f5f7;
   display: flex;
@@ -1939,7 +1940,7 @@ body {
   width: 100%;
   height: 100%;
   border: none;
-  min-height: 600px;
+  min-height: 800px;
   min-width: 100%;
   display: block;
   border-radius: 0;
@@ -2023,7 +2024,7 @@ body {
 .nav-section .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 150%;
   left: 0;
   min-width: 370px;
   background: #fff;
@@ -2047,10 +2048,10 @@ body {
 
 .nav-section .dropdown-menu li a {
   display: block;
-  padding: 18px 24px;
+  /* padding: 18px 24px; */
   color: #222;
   font-weight: 600;
-  font-size: 1.18rem;
+  font-size: 16px;
   border-bottom: 1px solid #eee;
   background: #fff;
   transition: background 0.2s, color 0.2s;
@@ -2087,18 +2088,8 @@ body {
 }
 
 .nav-section .dropdown-menu li a {
-  padding: 15.3px 20.4px; /* 18px * 0.85, 24px * 0.85 */
-  font-size: 1rem; /* 1.18rem * 0.85 ≈ 1rem */
-}
-
-.dropdown-menu a {
-  padding: 15.3px 23.8px; /* 18px * 0.85, 28px * 0.85 */
-  font-size: 0.98rem; /* 1.15rem * 0.85 ≈ 0.98rem */
-}
-
-.nav-section .dropdown-menu li:first-child a {
-  padding: 15.3px 20.4px;
-  font-size: 1rem;
+  padding: 10px 16px;
+  font-size: 16px;
 }
 
 /* Mobile Responsive Styles */

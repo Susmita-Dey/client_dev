@@ -104,7 +104,7 @@
 }
 
 .partner-description {
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: #444;
   line-height: 1.6;
   margin-bottom: 24px;
@@ -119,10 +119,11 @@
 
 .partner-benefits li {
   font-size: 1.05rem;
-  color: #1e1e26;
+  color: #444;
   margin-bottom: 16px;
   display: flex;
   align-items: flex-start;
+  line-height: 1.4;
 }
 
 .partner-benefits .check {
@@ -144,10 +145,11 @@
 
 .partner-image img {
   width: 100%;
-  max-width: 360px;
+  max-width: 420px;
   height: auto;
   display: block;
 }
+
 .benefit-enquiry-section {
   width: 100%;
   padding: 80px 5%;
@@ -218,7 +220,7 @@
 
 .benefits-image {
   width: 100%;
-  max-width: 360px;
+  max-width: 460px;
   height: auto;
   display: block;
   margin-top: 10px;
