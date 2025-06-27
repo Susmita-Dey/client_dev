@@ -477,6 +477,19 @@ button {
   background: #d32f2f;
 }
 
+#solutions-btn img,
+#mobile-solutions-btn img {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-left: 2px;
+  transition: transform 0.2s;
+  fill: #b71c1c;
+  color: #b71c1c;
+  user-select: none;
+  pointer-events: none;
+}
+
 /* ===== Responsive Breakpoints ===== */
 @media (max-width: 1200px) {
   .main-header {
