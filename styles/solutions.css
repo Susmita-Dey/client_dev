@@ -392,11 +392,11 @@
 }
 
 .benefits-block-title {
-  font-size: 1.03675rem;
+  font-size: 1.2rem;
   /* 0.9425rem * 1.1 */
   font-weight: 700;
   color: #232b39;
-  margin-bottom: 12.87px;
+  margin: 2rem 0;
   /* 11.7px * 1.1 */
 }
 
@@ -421,11 +421,16 @@
 }
 
 .benefit-icon {
-  color: #b71c1c;
-  font-size: 0.858rem;
-  /* 0.78rem * 1.1 */
-  margin-top: 2.145px;
-  /* 1.95px * 1.1 */
+  border: 2px solid #b71c1c;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  background-color: #b71c1c;
+  font-size: 0.65rem;
+  color: #fff;
+  margin: 0 0.58px 0 0;
+  padding: 0 4.17px;
 }
 
 /* Right: Form */
@@ -1213,9 +1218,14 @@ textarea::placeholder {
 }
 
 .feature-rich-wifi-list .benefit-icon {
-  color: #b71c1c;
-  font-size: 1.25rem;
-  margin-right: 12px;
+  background-color: #b71c1c;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: -1.5px;
   flex-shrink: 0;
 }
 

@@ -2800,3 +2800,47 @@ body {
     float: right;
   }
 }
+
+.pdf-simple-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.pdf-download-btn {
+  padding: 10px 24px;
+  background: #b71c1c;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: background 0.2s;
+  margin-top: 10px;
+}
+.pdf-download-btn:hover {
+  background: #8a1616;
+}
+.pdf-preview-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border: none;
+  box-shadow: none;
+  line-height: 0;
+}
+
+@media (max-width: 768px) {
+  .pdf-download-btn {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+  .pdf-preview-img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}

@@ -538,7 +538,37 @@ button {
 
 @media (max-width: 768px) {
   .top-info-bar {
-    display: none;
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .info-left,
+  .info-right {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .info-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-right .phone {
+    white-space: normal;
+  }
+
+  .info-right .phone {
+    word-break: break-all;
+  }
+
+  .info-right .phone {
+    /* Remove all spaces including &nbsp; */
+    unicode-bidi: normal;
   }
 
   .main-header {
