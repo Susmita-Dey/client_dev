@@ -307,7 +307,7 @@ button {
 .mobile-nav {
   display: none;
   position: fixed;
-  top: 80px;
+  top: 160px;
   left: 0;
   width: 100%;
   max-height: calc(100vh - 80px);
@@ -551,11 +551,22 @@ button {
     width: 100%;
     margin-bottom: 10px;
   }
+  .info-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .info-left svg {
+    display: none;
+  }
   .info-right {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
 
   .info-right .phone {
@@ -592,6 +603,10 @@ button {
     width: 120px;
     height: 50px;
     margin-right: 0;
+  }
+
+  .mobile-dropdown-menu.active {
+    border: none;
   }
 }
 
