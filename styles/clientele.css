@@ -115,6 +115,10 @@ body {
   min-width: auto;
 }
 
+.tabs button {
+  font-family: "Inter", sans-serif;
+}
+
 .tab {
   background-color: transparent;
   border: none;

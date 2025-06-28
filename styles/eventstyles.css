@@ -69,6 +69,7 @@
   flex: 0 0 300px;
   /* Flex-grow, flex-shrink, flex-basis */
   border-right: 1px solid #eee;
+  font-family: "Inter", sans-serif;
 }
 
 .tabs-nav ul {
